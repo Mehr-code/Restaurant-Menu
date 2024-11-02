@@ -8,7 +8,7 @@
       <!-- Logo -->
       <div class="absolute top-6 left-12 flex flex-row gap-3 items-center">
         <img src="../UI/logo.png" alt="Pir BaBa's logo" class="w-20 h-20" />
-        <p class="font-bold text-5xl text-[#ffb80e]">Pir BaBa</p>
+        <p class="font-bold text-5xl text-white">Pir BaBa</p>
       </div>
 
       <!-- Hamburger PIC -->
