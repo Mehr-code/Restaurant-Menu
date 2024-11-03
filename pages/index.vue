@@ -17,7 +17,39 @@
       </div>
 
       <!-- Login -->
-      <div class="w-[60%]"></div>
+      <div class="w-[60%] flex justify-center items-center">
+        <div class="flex flex-col gap-4 w-[80%]">
+          <h2 class="text-3xl font-semibold text-white mb-10">
+            <span class="text-6xl">Welcome,</span><br />please fill out your
+            info
+          </h2>
+
+          <!-- Customer INFO -->
+          <div class="flex flex-col gap-2">
+            <!-- Customer name -->
+            <label for="customerName" class="text-white text-lg">name: </label>
+            <input
+              type="text"
+              name="cutomerName"
+              id="customrName"
+              class="w-[60%] h-8 p-5 rounded-lg"
+              placeholder="james maccafie"
+            />
+
+            <!-- Customer table -->
+            <label for="customerName" class="text-white text-lg mt-4"
+              >Table:
+            </label>
+            <input
+              type="number"
+              name="cutomerName"
+              id="customrName"
+              class="w-[60%] h-8 rounded-lg p-5"
+              placeholder="6"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
