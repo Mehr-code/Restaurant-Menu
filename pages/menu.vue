@@ -13,43 +13,72 @@
 
     <!-- محتوای منو اینجا قرار می‌گیرد -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <!-- کارت‌های منو -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <MenuItem
-          v-for="(item, index) in menuItems"
-          :key="index"
-          :item="item"
-        />
+      <!-- نمونه کارت منو -->
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
+      </div>
+      <!-- تکرار کارت منو برای آیتم‌های دیگر -->
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
+      </div>
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
+      </div>
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
+      </div>
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
+      </div>
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-yellow-500 hover:bg-yellow-100 transition duration-200 cursor-pointer"
+      >
+        <h2 class="text-xl font-bold text-red-600">Burger</h2>
+        <p class="text-gray-700">
+          Juicy and delicious burger with special sauce.
+        </p>
+        <p class="text-yellow-600 font-bold mt-2">$5.99</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import MenuItem from "~/component/MenuItem.vue";
-// import axios from "axios";
 
 const route = useRoute();
 const customerName = route.query.name || "Guest";
 const tableNumber = route.query.table || "Unknown";
-const menuItem = ref([]);
-
-// فراخوانی API برای دریافت داده‌ها
-const fetchMenuItems = async () => {
-  try {
-    const response = await useFetch("https://api.example.com/menu");
-    menuItems.value = response.data;
-  } catch (error) {
-    console.error("Error fetching menu items:", error);
-  }
-};
-
-// دریافت داده‌ها هنگام بارگذاری صفحه
-onMounted(() => {
-  fetchMenuItems();
-});
 </script>
 
 <style scoped>
@@ -58,7 +87,7 @@ onMounted(() => {
 }
 
 .bg-red-500 {
-  background-color: #e32929;
+  background-color: #ef4444;
 }
 
 .text-red-600 {
@@ -66,7 +95,7 @@ onMounted(() => {
 }
 
 .border-yellow-500 {
-  border-color: #ffb80e;
+  border-color: #fbbf24;
 }
 
 .bg-yellow-50 {
